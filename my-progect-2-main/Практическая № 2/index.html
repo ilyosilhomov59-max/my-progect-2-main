@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествие по России</title>
+</head>
+<body>
+
+    <header id="top">
+        <h1>Россия — страна открытий</h1>
+            <nav>
+                <a href="#top ">Главная |</a>
+                <a href="#destinations">Направления |</a>
+                <a href="#from ">Заявка на путешествие</a>
+            </nav>
+            <hr>
+                <img src="images/kamchatka.jpg" alt="kamchatka" width="100%">
+    </header>
+    
+
+<h2>Планируй путешествие по России!</h2>
+<p><b>Открой новые места,</b> познакомься с природой и создай собственный маршрут.</p>
+<p>Заполни анкету, и начнём планировать твоё приключение!</p>
+<hr>
+
+<main>
+    <section id="from">
+        
+        <h2>Анкета путешественника</h2>
+        <p>Расскажи немного о себе и выбери направление, которое тебе больше всего нравится.</p>
+            <form action="#" method="post">
+                <fieldset>
+            <legend><b>1.Личная информация</b></legend><br>
+
+            <p><label for="user-name">Твоё имя:</label><br>
+            <input type="text"  id="user-name" placeholder=" Например Иван"><br></p>
+
+            <p><label for="user-email">Електронная почта:</label><br>
+            <input type="email" id="user-email" placeholder="name@example.com"><br></p>
+
+            <p><label for="user-tel">Телефон:</label><br>
+            <input type="tel" id="user-tel" placeholder="+7 995 555 67-12"><br></p>
+
+            <p><label>Возраст:</label><br>
+            <input type="number" min="1" max="120"><br></p>
+
+            <p>Как с тобой удобнее связаться?</p>
+                    <input type="radio" id="contact-email" name="content"> <label for="user-email">E-mail</label>
+                    <input type="radio" id="contact-tel" name="content"> <label for="user-tel">Телефон</label>
+                    <input type="radio" id="contact-telegram" name="content"> <label for="user-telegram">Telegram</label>
+                </fieldset>
+            </form>
+    </section>
+</main>
+
+
+    <fieldset id="destinations">
+<legend><h2>Выбери направление</h2></legend>
+<p>Куда отправимся?</p>
+    <table border="1" cellpadding="8">
+            <tr>
+                <td>
+                    <figure>
+                    <img src="images/baikal.jpg" alt="baikal" width="180px">
+                    <figcaption>Байкал</figcaption>
+                    <input type="checkbox" id="baikal">
+                    <label>Выбрать Байкал</label>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                    <img src="images/peterburg.jpg" alt="peterburg" width="180px">
+                    <figcaption>Санкт-Петербург</figcaption>
+                    <input type="checkbox" id="peterburg">
+                    <label>Выбрать Петербург</label>
+                    </figure>
+                </td>
+                <td>
+                    
+                    <figure>
+                    <img src="images/altai.jpg" alt="altai" width="180px">
+                    <figcaption>Алтай</figcaption>
+                    <input type="checkbox" id="altai">
+                    <label for="altai">выбрать Алтай</label>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    
+
+
+<label>Дата поездки:</label><br>
+<input type="date"><br>
+<label>Продолжительность:</label><br>
+<select name="" id=""><br>
+    <option value="">Выходные</option>
+    <option value="">7 дней</option>
+    <option value="">14 дней</option>
+    <option value="">Месяц</option>
+</select>
+        
+<p>Какой отдых тебе нравится?</p>
+<p>
+    <input type="radio" name="content"><label>Походы и приключения</label>
+</p>
+<p>
+    <input type="radio" name="content"><label>Музеи и экскурсии</label>
+</p>
+<p>
+    <input type="radio" name="content"><label>Музеи и экскурсии</label>
+</p>
+    </fieldset>
+<hr>
+
+<fieldset>
+    <legend><h2>3.Дополнительные пожелания</h2></legend>
+
+<p>Что добавим в путешествие?</p>
+<input type="checkbox"><label>Экскурсии</label><br>
+<input type="checkbox"><label>Природные достопримечательности</label><br>
+<input type="checkbox"><label>Музеи</label><br>
+<input type="checkbox"><label>Местная кухня</label><br>
+
+<p>
+    <div>Бюджет путешествия:</div>
+<select>
+    <option>До 20 000 рублей</option>
+    <option>20 000–50 000 рублей</option>
+    <option>Более 50 000 рублей</option>
+</select><br>
+</p>
+
+
+
+
+<p><div>Расскажи о путешествии своей мечты:</div>
+<textarea></textarea></p>
+
+<p><div>Если нужно, выбери фотографию для вдохновения:</div>
+<input type="file" accept="image/images"></p>
+
+<p><input type="checkbox" required><label>Я согласен на обработку указанных данных.</label></p>
+
+
+</fieldset>
+<input type="submit">
+<input type="reset"><br>
+<hr>
+
+<h2>Почему стоит путешествовать?</h2>
+
+<ul>
+    <li>Увидеть невероятные пейзажи.</li>
+    <li>Познакомиться с культурой разных регионов.</li>
+    <li>Попробовать необычные блюда.</li>
+    <li>Получить новые впечатления и эмоции.</li>
+</ul>
+
+<blockquote>«Путешествие в тысячу миль начинается с первого шага».</blockquote>
+<hr>
+<strong>Россия — здесь начинается твоё путешествие!</strong>
+
+<a href="#top">↑ Вернуться в начало</a>
+
+
+
+</body>
+</html>
